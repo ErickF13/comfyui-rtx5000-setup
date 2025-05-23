@@ -1,7 +1,9 @@
 
-# ComfyUI Installation Guide with SageAttention (RTX 4000/5000 Compatible)
+# ComfyUI Installation Guide with SageAttention (RTX 5000 Compatible)
 
 This guide helps you install [ComfyUI](https://github.com/comfyanonymous/ComfyUI) with `SageAttention` support using Miniconda on Windows. Tailored for NVIDIA RTX 5000 GPUs.
+
+The idea of this guide is to have a comfyUI setup running with some dependencies that are required, only available in their development channel.
 
 ## 📦 Prerequisites
 
@@ -36,10 +38,11 @@ pip install sageattention
 pip install triton-windows==3.3.0.post19
 ```
 
+### Install SageAttention
 ### Optional: Manual SageAttention Compilation (Advanced)
 
 ```bash
-# Only needed for latest SageAttention (recommended for RTX 4000/5000 series)
+# Manual compilation only needed for latest SageAttention (recommended for RTX 5000 series), improves generation speed slightly.
 git clone https://github.com/thu-ml/SageAttention.git  
 cd SageAttention
 python setup.py install  # or use: pip install -e .
