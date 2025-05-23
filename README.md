@@ -3,7 +3,7 @@
 
 This guide helps you install [ComfyUI](https://github.com/comfyanonymous/ComfyUI) with `SageAttention` support using Miniconda on Windows. Tailored for NVIDIA RTX 5000 GPUs.
 
-The idea of this guide is to have a comfyUI setup running with some dependencies that are required, only available in their development channel.
+The idea of this guide is to have a comfyUI setup running with some dependencies that are required, only available through their development channel.
 
 ## 📦 Prerequisites
 
@@ -54,7 +54,9 @@ python setup.py install  # or use: pip install -e .
 
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/ltdrdata/ComfyUI-Manager.git  
+git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+cd ComfyUI-Manager
+pip install -r requirements.txt  
 cd ..
 cd ..
 ```
@@ -102,6 +104,7 @@ There is a image to video creation setup for WAN2.1 models.
 ## 💬 Credits
 
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+- [Triton-Windows](https://github.com/woct0rdho/triton-windows)
 - [SageAttention](https://github.com/thu-ml/SageAttention)
 - [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager)
 
